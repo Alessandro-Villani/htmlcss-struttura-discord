@@ -36,6 +36,7 @@ hr{
 /* Utils */
 
 :root{
+    --space-xxs: 5px;
     --space-xs: 10px;
     --space-sm: 15px;
     --space-nm: 50px
@@ -64,6 +65,11 @@ hr{
 .row-reverse{
     flex-direction: row-reverse;
 }
+
+.p-5{
+    padding: var(--space-xxs);
+}
+
 /* Header */
 
 header{
@@ -136,6 +142,7 @@ nav{
 #link-section{
     background-color: rgb(35,39,42);
     min-height: 550px;
+    margin-bottom: 1px;
 }
 
 .link-con{
@@ -159,4 +166,27 @@ nav{
 .link-small-box{
     background-color:rgb(32,178,170);
     flex-basis: 25%;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(35,39,42);
+    min-height: 100px;
+}
+
+.footer-con{
+    align-items: flex-end;
+}
+
+.footer-box{
+    min-height: 80px;
+    flex-basis: 100%;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content{
+    background-color: rgb(255,182,193);
 }
