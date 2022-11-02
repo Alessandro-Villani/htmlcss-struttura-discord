@@ -7,13 +7,14 @@
 
 /* General */
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .flex-con {
     display: flex;
+}
+
+.container{
+    flex-basis: 1200px;
+    align-items: center;
+    margin: 0 auto;
 }
 
 ul{
@@ -43,10 +44,17 @@ a{
     border: 1px dashed black;
 }
 
-.p-50{
-    padding: var(--space-nm) 0;
+.gray-bg{
+    background-color: lightgray;
 }
 
+.white-bg{
+    background-color: white;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
 /* Header */
 
 header{
@@ -56,12 +64,12 @@ header{
 }
 
 nav{
-    background-color: goldenrod;
-    width: 1200px;
+    flex-wrap: wrap;
 }
 
 .navbar {
     padding: var(--space-xs);
+    background-color: goldenrod;
 }
 
 .side{
@@ -85,4 +93,21 @@ nav{
     background-color: violet;
     flex-basis: 1000px;
     min-height: 400px;
+}
+
+.secondary-section{
+    min-height: 600px;
+}
+
+.big-box{
+    background-color: dodgerblue;
+    flex-basis: 60%;
+    min-height: 500px;
+    
+}
+
+.small-box{
+    background-color: pink;
+    flex-basis: 40%;
+    min-height: 500px;
 }
