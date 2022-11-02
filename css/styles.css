@@ -32,11 +32,19 @@ a{
 :root{
     --space-xs: 10px;
     --space-sm: 15px;
-    --space-nm: 20px;
+    --space-nm: 50px;
 }
 
 .rt-align{
     text-align: right;
+}
+
+.dashed {
+    border: 1px dashed black;
+}
+
+.p-50{
+    padding: var(--space-nm) 0;
 }
 
 /* Header */
@@ -53,7 +61,6 @@ nav{
 }
 
 .navbar {
-    border: 1px dashed black;
     padding: var(--space-xs);
 }
 
@@ -63,4 +70,19 @@ nav{
 
 .center{
     flex-basis: 60%;
+}
+
+/* Main */
+
+#main-section{
+    background-color: darkblue;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-box{
+    background-color: violet;
+    flex-basis: 1000px;
+    min-height: 400px;
 }
