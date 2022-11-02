@@ -5,3 +5,62 @@
     box-sizing: border-box;
 }
 
+/* General */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-con {
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    justify-content: center;
+}
+
+a{
+    padding: 0 var(--space-xs);
+    text-decoration: none;
+    color: black;
+}
+
+/* Utils */
+
+:root{
+    --space-xs: 10px;
+    --space-sm: 15px;
+    --space-nm: 20px;
+}
+
+.rt-align{
+    text-align: right;
+}
+
+/* Header */
+
+header{
+    height: 80px;
+    background-color: lightblue;
+    align-items: center;
+}
+
+nav{
+    background-color: goldenrod;
+    width: 1200px;
+}
+
+.navbar {
+    border: 1px dashed black;
+    padding: var(--space-xs);
+}
+
+.side{
+    flex-basis: 20%;
+}
+
+.center{
+    flex-basis: 60%;
+}
