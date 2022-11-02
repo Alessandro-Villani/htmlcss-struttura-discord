@@ -20,6 +20,7 @@
 ul{
     list-style: none;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 a{
@@ -58,7 +59,7 @@ a{
 /* Header */
 
 header{
-    height: 80px;
+    min-height: 80px;
     background-color: lightblue;
     align-items: center;
 }
@@ -110,4 +111,14 @@ nav{
     background-color: pink;
     flex-basis: 40%;
     min-height: 500px;
+}
+
+#closing-section{
+    min-height: 1000px;
+}
+
+.cl-section-box{
+    background-color: darkgreen;
+    flex-basis: 100%;
+    min-height: 900px;
 }
