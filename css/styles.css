@@ -29,12 +29,16 @@ a{
     color: black;
 }
 
+hr{
+    color: white;
+}
+
 /* Utils */
 
 :root{
     --space-xs: 10px;
     --space-sm: 15px;
-    --space-nm: 50px;
+    --space-nm: 50px
 }
 
 .rt-align{
@@ -43,6 +47,10 @@ a{
 
 .dashed {
     border: 1px dashed black;
+}
+
+.white {
+    border-color: white;
 }
 
 .gray-bg{
@@ -121,4 +129,34 @@ nav{
     background-color: darkgreen;
     flex-basis: 100%;
     min-height: 900px;
+}
+
+/* Link Section */
+
+#link-section{
+    background-color: rgb(35,39,42);
+    min-height: 550px;
+}
+
+.link-con{
+    align-items: flex-start;
+    padding-top: var(--space-xs);
+}
+
+.link-big-box{
+    background-color: palevioletred;
+    flex-basis: 30%;
+    min-height: 500px;
+    margin-bottom: var(--space-nm)
+}
+
+.link-box-container{
+    flex-basis: 70%;
+    min-height: 500px;
+    margin-bottom: var(--space-nm)
+}
+
+.link-small-box{
+    background-color:rgb(32,178,170);
+    flex-basis: 25%;
 }
